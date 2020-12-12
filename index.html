@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/destyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
-    
     <title>Sakumomo Design</title>
 </head>
 <body>
     <header>
-        <div class="header_inner">
-            <h1>Sakumomo Design</h1>
+        <div class="content_wrapper header_nav">
+            <h1>Sakumomo Design.</h1>
+            <div class="nav_wrapper">
             <nav>
                 <ul>
                     <li><a href="#" class="nav-menu">About</a></li>
@@ -19,6 +21,107 @@
                 </ul>
             </nav>
         </div>
+        </div>
+        <button class="burger-btn">
+            <span class="bars">
+              <span class="bar bar_top"></span>
+              <span class="bar bar_mid"></span>
+              <span class="bar bar_bottom"></span>
+            </span>
+          </button>
     </header>
+    <div class="mainvisual">
+        <h2>Sakumomo Design.</h2>
+    </div>
+    <section class="about">
+        <div class="content_wrapper">
+            <h2>About</h2>
+            <h3>ミニマルで<br>
+            洗練されたデザインを。</h3>
+            <p>近年、ミニマルなデザインが流行しています。そこで弊社では、
+                クライアント企業様新規サービス等の課題に対してミニマルで洗練された
+                デザインを実現させることで解決のサポートを致します。
+                もちろん全てのサービスにおいてミニマルなデザインが課題解決になるわけではないので、
+                課題や今後のサービス展開等しっかりとヒアリングを行った上でご提案させて頂きます。
+            </p>
+        </div>
+    </section>
+    <section class="service">
+        <div class="content_wrapper">
+            <h2>Service</h2>
+            <div class="service_inner reverse">
+                <div class="service_text">
+                    <h3>リリース時のサポートで<br>サービスのブランディングを</h3>
+                    <p>弊社ではリリース時もサポートさせて頂きます。プレスリリース用のサイトや
+                        動画制作を通して、サービスのブランディングを行わせて頂きます。
+                    </p>
+                </div>
+                <div class="service_img">
+                    <img src="img/service-image.jpg" alt="サービスイメージ1">
+                </div>
+            </div>
+            <div class="service_inner no_reverse">
+                <div class="service_text">
+                    <h3>リリース後のサポートで<br>
+                    効果を最大化させる</h3>
+                    <p>弊社では、リリース後もサポートさせて頂きます。サービスは
+                        リリース後に様々な課題にぶつかります。そこでクライアント様と一緒に
+                        改善を行うことで、デザインの効果を最大化させます。
+                    </p>
+                </div>
+                <div class="service_img">
+                    <img src="img/service-image02.jpg" alt="サービスイメージ2">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="news">
+        <div class="content_wrapper">
+            <h2>News</h2>
+            <div class="news_items">
+                <div class="item">
+                    <img src="img/card-image1.jpg" alt="ニュース1">
+                    <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+                </div>
+                <div class="item">
+                    <img src="img/card-image2.jpg" alt="ニュース2">
+                    <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+                </div>
+                <div class="item">
+                    <img src="img/card-image3.jpg" alt="ニュース3">
+                    <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="content_wrapper">
+        <h2>お問い合わせ</h2>
+        <form action="#">
+            <div class="form_part">
+                <label for="name">担当者名</label>
+                <input type="text" id="name">
+            </div>
+            <div class="form_part">
+                <label for="phone">電話番号</label>
+                <input type="phone" id="phone">
+            </div>
+            <div class="form_part">
+                <label for="email">メールアドレス</label>
+                <input type="email" id="email">
+            </div>
+            <div class="form_part">
+                <label for="message">お問い合わせ内容</label>
+                <textarea name="message" id="message"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="送信" id="submit">
+            </div>
+        </form>
+    </div>
+    </section>
+    <footer>
+        <p>©︎Sakumomo Design all right reserved</p>
+    </footer>
 </body>
 </html>
